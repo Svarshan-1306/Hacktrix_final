@@ -1,7 +1,7 @@
 const logos = [
-  { name: "Sri Sai Ram Institute of Technology", text: "SSIT" },
-  { name: "Computer Society of India", text: "CSI" },
-  { name: "IEEE Computer Society", text: "IEEE CS" },
+  { name: "Sri Sai Ram Institute of Technology", src: "/ssit-logo.png" },
+  { name: "Computer Society of India", src: "/csi-logo.png" },
+  { name: "IEEE Computer Society", src: "/ieee-logo.png" },
 ];
 
 const LogoBanner = () => (
@@ -12,9 +12,9 @@ const LogoBanner = () => (
       {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
         <div
           key={i}
-          className="mx-8 flex-shrink-0 glass rounded-xl px-10 py-5 font-heading text-sm font-bold tracking-widest text-muted-foreground"
+          className="mx-8 flex flex-shrink-0 items-center justify-center h-28"
         >
-          {logo.text}
+          <img src={logo.src} alt={logo.name} className="h-full w-auto max-w-full rounded-2xl object-contain bg-white p-3" />
         </div>
       ))}
     </div>

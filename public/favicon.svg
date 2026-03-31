@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dynamic Navy Blue Gradient Background -->
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="100%" stop-color="#1A2035" />
+    </linearGradient>
+    <linearGradient id="neon-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5A00" />
+      <stop offset="100%" stop-color="#FF7F40" />
+    </linearGradient>
+    <linearGradient id="neon-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C4FF" />
+      <stop offset="100%" stop-color="#40D6FF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)" />
+
+  <!-- "H" Form -->
+  <!-- Left Pillar -->
+  <rect x="140" y="140" width="60" height="232" rx="16" fill="url(#neon-blue)" />
+  <!-- Right Pillar -->
+  <rect x="312" y="140" width="60" height="232" rx="16" fill="url(#neon-orange)" />
+  <!-- Crossbar -->
+  <rect x="200" y="230" width="112" height="52" rx="16" fill="#FFFFFF" />
+</svg>

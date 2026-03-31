@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         heading: ["Space Grotesk", "sans-serif"],
         body: ["Plus Jakarta Sans", "sans-serif"],
+        cyber: ["Chakra Petch", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -92,6 +93,10 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "marquee-track": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
         "pulse-glow": {
           "0%, 100%": { opacity: "0.4" },
           "50%": { opacity: "1" },
@@ -103,6 +108,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out forwards",
         float: "float 6s ease-in-out infinite",
         marquee: "marquee 20s linear infinite",
+        "marquee-track": "marquee-track 30s linear infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
       },
     },

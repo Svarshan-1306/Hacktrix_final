@@ -3,10 +3,10 @@ import { Globe, Users, Award } from "lucide-react";
 const AboutCSI = () => (
   <section id="about" className="relative py-24 gradient-bg">
     <div className="container mx-auto px-4 lg:px-8">
-      <h2 className="mb-4 text-center font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="mb-4 text-center font-heading text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
         About <span className="text-secondary glow-text-blue">Computer Society of India</span>
       </h2>
-      <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
+      <p className="mx-auto mb-12 max-w-2xl text-center text-lg text-muted-foreground">
         India's largest body of computer professionals, advancing IT knowledge and innovation.
       </p>
 
@@ -23,8 +23,8 @@ const AboutCSI = () => (
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-secondary/10 text-secondary">
               <Icon size={28} />
             </div>
-            <h3 className="mb-2 font-heading text-sm font-semibold tracking-wide text-foreground">{title}</h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
+            <h3 className="mb-2 font-heading text-lg font-semibold tracking-wide text-foreground">{title}</h3>
+            <p className="text-base leading-relaxed text-muted-foreground">{desc}</p>
           </div>
         ))}
       </div>

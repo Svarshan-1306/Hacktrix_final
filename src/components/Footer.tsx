@@ -10,7 +10,7 @@ const socials = [
 const Footer = () => (
   <footer className="border-t border-border bg-background py-10">
     <div className="container mx-auto flex flex-col items-center gap-6 px-4 sm:flex-row sm:justify-between lg:px-8">
-      <span className="font-heading text-lg font-bold tracking-wider text-primary">HACKTRIX</span>
+      <span className="font-heading text-2xl font-bold tracking-wider text-primary">HACKTRIX</span>
       <div className="flex gap-4">
         {socials.map(({ icon: Icon, href }, i) => (
           <a
@@ -22,7 +22,7 @@ const Footer = () => (
           </a>
         ))}
       </div>
-      <p className="text-xs text-muted-foreground">© 2026 HACKTRIX. All rights reserved.</p>
+      <p className="text-sm text-muted-foreground">© 2026 HACKTRIX. All rights reserved.</p>
     </div>
   </footer>
 );

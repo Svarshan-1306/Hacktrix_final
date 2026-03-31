@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import heroRobot from "@/assets/hero-robot.png";
 
 const TARGET_DATE = new Date("2026-04-16T09:00:00+05:30").getTime();
 
@@ -15,11 +14,16 @@ const calcTimeLeft = () => {
 };
 
 const CountdownUnit = ({ value, label }: { value: number; label: string }) => (
-  <div className="glass rounded-xl px-4 py-3 text-center min-w-[70px] glow-orange">
-    <div className="font-heading text-2xl font-bold text-primary sm:text-3xl">
+  <div className="relative flex min-w-[100px] flex-col items-center justify-center rounded-2xl border border-primary/20 bg-background/50 p-6 backdrop-blur-md transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(255,90,0,0.3)] sm:min-w-[120px]">
+    <div className="absolute left-2 top-2 h-1 w-1 rounded-full bg-primary/40" />
+    <div className="absolute right-2 top-2 h-1 w-1 rounded-full bg-primary/40" />
+    <div className="absolute bottom-2 left-2 h-1 w-1 rounded-full bg-primary/40" />
+    <div className="absolute bottom-2 right-2 h-1 w-1 rounded-full bg-primary/40" />
+    
+    <div className="font-cyber text-5xl font-black text-primary drop-shadow-[0_0_15px_rgba(255,90,0,0.6)] sm:text-6xl">
       {String(value).padStart(2, "0")}
     </div>
-    <div className="mt-1 text-[10px] uppercase tracking-widest text-muted-foreground">
+    <div className="mt-2 text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">
       {label}
     </div>
   </div>
@@ -55,66 +59,61 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative flex min-h-screen items-center gradient-hero overflow-hidden">
       <Particles />
-      <div className="container relative z-10 mx-auto grid gap-12 px-4 py-32 lg:grid-cols-2 lg:items-center lg:px-8">
-        {/* Left */}
-        <div className="space-y-6">
-          <h1 className="font-heading text-5xl font-black leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            HACK<span className="text-primary glow-text-orange">TRIX</span>
-          </h1>
-          <p className="font-heading text-lg font-semibold tracking-wide text-secondary sm:text-xl glow-text-blue">
-            A 24-Hour Hackathon
-          </p>
-          <p className="max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Organized by{" "}
-            <span className="text-foreground font-medium">Sri Sai Ram Institute of Technology</span>{" "}
-            in association with{" "}
-            <span className="text-foreground font-medium">Computer Society of India – Region 7</span>
-          </p>
+      <div className="container relative z-10 mx-auto flex flex-col items-center text-center px-4 py-32 lg:px-8">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 font-cyber text-xs font-semibold tracking-widest text-primary uppercase">
+          <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
+          system.init()
+        </div>
+        <h1 className="relative font-cyber text-7xl font-bold leading-none tracking-wider text-foreground sm:text-8xl lg:text-9xl">
+          <span className="absolute -left-8 top-4 hidden -rotate-90 text-sm font-light tracking-widest text-muted-foreground/40 md:block">
+            v2.0.26
+          </span>
+          [HACK<span className="text-primary glow-text-orange">TRIX</span>]
+        </h1>
+        <p className="mt-6 font-cyber text-2xl font-semibold uppercase tracking-widest text-secondary sm:text-3xl glow-text-blue">
+          // A 24-Hour Hackathon
+        </p>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          Organized by{" "}
+          <span className="text-foreground font-medium">Sri Sai Ram Institute of Technology</span>{" "}
+          in association with{" "}
+          <span className="text-foreground font-medium">Computer Society of India – Region 7</span>
+        </p>
 
-          <div className="flex flex-wrap gap-4 text-sm">
-            <span className="glass rounded-lg px-4 py-2 font-heading text-xs font-bold tracking-wider text-primary">
-              🏆 PRIZE POOL: ₹50,000
-            </span>
-            <span className="glass rounded-lg px-4 py-2 text-xs text-muted-foreground">
-              📅 April 16 & 17, 2026
-            </span>
-            <span className="glass rounded-lg px-4 py-2 text-xs text-muted-foreground">
-              📍 Steve Jobs Hall, Chennai
-            </span>
-          </div>
-
-          {/* Countdown */}
-          <div className="flex flex-wrap gap-3 pt-2">
-            <CountdownUnit value={time.days} label="Days" />
-            <CountdownUnit value={time.hours} label="Hours" />
-            <CountdownUnit value={time.minutes} label="Mins" />
-            <CountdownUnit value={time.seconds} label="Secs" />
-          </div>
-
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4 pt-4">
-            <a
-              href="#registration"
-              className="rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
-            >
-              Register Now
-            </a>
-            <a
-              href="#agenda"
-              className="rounded-lg border border-glass-border bg-glass px-8 py-3 font-semibold text-foreground transition-all hover:border-secondary hover:text-secondary"
-            >
-              View Agenda
-            </a>
-          </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-6 font-cyber uppercase tracking-wider">
+          <span className="flex items-center gap-2 rounded-xl border-2 border-secondary/50 bg-secondary/10 px-6 py-3 text-lg font-bold text-secondary shadow-[0_0_15px_rgba(0,255,255,0.2)] backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(0,255,255,0.4)]">
+            <span className="text-primary glow-text-orange">&gt;</span> PRIZE POOL: ₹50,000
+          </span>
+          <span className="flex items-center gap-2 rounded-xl border-2 border-muted-foreground/30 bg-muted/10 px-6 py-3 text-lg font-bold text-foreground shadow-[0_0_15px_rgba(255,255,255,0.05)] backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]">
+            <span className="text-primary glow-text-orange">&gt;</span> DATE: APRIL 16 &amp; 17, 2026
+          </span>
+          <span className="flex items-center gap-2 rounded-xl border-2 border-primary/50 bg-primary/10 px-6 py-3 text-lg font-bold text-primary shadow-[0_0_15px_rgba(255,90,0,0.3)] backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(255,90,0,0.5)]">
+            <span className="text-secondary glow-text-blue">&gt;</span> LOC: STEVE JOBS HALL
+          </span>
         </div>
 
-        {/* Right – illustration */}
-        <div className="hidden items-center justify-center lg:flex">
-          <img
-            src={heroRobot}
-            alt="Futuristic tech illustration"
-            className="w-full max-w-md animate-float drop-shadow-2xl"
-          />
+        {/* Countdown */}
+        <div className="mt-12 flex flex-wrap justify-center gap-4 sm:gap-6">
+          <CountdownUnit value={time.days} label="Days" />
+          <CountdownUnit value={time.hours} label="Hours" />
+          <CountdownUnit value={time.minutes} label="Mins" />
+          <CountdownUnit value={time.seconds} label="Secs" />
+        </div>
+
+        {/* CTAs */}
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="#registration"
+            className="rounded-lg bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
+          >
+            Register Now
+          </a>
+          <a
+            href="#agenda"
+            className="rounded-lg border border-glass-border bg-glass px-10 py-4 text-lg font-semibold text-foreground transition-all hover:border-secondary hover:text-secondary"
+          >
+            View Agenda
+          </a>
         </div>
       </div>
     </section>

@@ -12,24 +12,24 @@ const reasons = [
 const WhyParticipate = () => (
   <section className="py-24 gradient-bg">
     <div className="container mx-auto px-4 lg:px-8">
-      <h2 className="mb-4 text-center font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="mb-4 text-center font-heading text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
         Why Be a Part of <span className="text-primary glow-text-orange">HACKTRIX</span>?
       </h2>
-      <p className="mx-auto mb-12 max-w-xl text-center text-muted-foreground">
+      <p className="mx-auto mb-12 max-w-xl text-center text-lg text-muted-foreground">
         More than a hackathon — it's a launchpad for your ideas.
       </p>
 
-      <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {reasons.map(({ icon: Icon, title, desc }) => (
           <div
             key={title}
-            className="glass group rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:glow-orange"
+            className="glass group rounded-3xl p-10 transition-all duration-300 hover:-translate-y-2 hover:border-primary/40 hover:glow-orange"
           >
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
-              <Icon size={24} />
+            <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+              <Icon size={36} />
             </div>
-            <h3 className="mb-2 font-heading text-sm font-semibold tracking-wide text-foreground">{title}</h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">{desc}</p>
+            <h3 className="mb-3 font-heading text-xl font-semibold tracking-wide text-foreground">{title}</h3>
+            <p className="text-lg leading-relaxed text-muted-foreground">{desc}</p>
           </div>
         ))}
       </div>

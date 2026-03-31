@@ -22,28 +22,28 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass py-3" : "bg-transparent py-5"
+        scrolled ? "glass py-4" : "bg-transparent py-7"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
-        <a href="#home" className="font-heading text-xl font-bold tracking-wider text-primary">
+        <a href="#home" className="font-cyber text-3xl font-bold tracking-widest text-primary">
           HACKTRIX
         </a>
 
         {/* Desktop */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-10 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {item.label}
             </a>
           ))}
           <a
             href="#registration"
-            className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
+            className="rounded-lg bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
           >
             Register Now
           </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
               key={item.href}
               href={item.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="block py-3 text-base text-muted-foreground transition-colors hover:text-foreground"
             >
               {item.label}
             </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
           <a
             href="#registration"
             onClick={() => setMobileOpen(false)}
-            className="mt-2 block rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground"
+            className="mt-2 block rounded-lg bg-primary px-5 py-2.5 text-center text-base font-semibold text-primary-foreground"
           >
             Register Now
           </a>

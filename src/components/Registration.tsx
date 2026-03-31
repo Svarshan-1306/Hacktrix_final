@@ -8,10 +8,10 @@ const plans = [
 const Registration = () => (
   <section id="registration" className="py-24 gradient-bg">
     <div className="container mx-auto px-4 lg:px-8">
-      <h2 className="mb-4 text-center font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="mb-4 text-center font-heading text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
         Registration <span className="text-primary glow-text-orange">Details</span>
       </h2>
-      <p className="mx-auto mb-12 max-w-lg text-center text-muted-foreground">
+      <p className="mx-auto mb-12 max-w-lg text-center text-lg text-muted-foreground">
         Secure your spot before it's too late.
       </p>
 
@@ -28,15 +28,15 @@ const Registration = () => (
                 Best Value
               </span>
             )}
-            <h3 className="font-heading text-sm font-semibold tracking-wide text-foreground">{label}</h3>
-            <div className="my-4 font-heading text-4xl font-black text-foreground">{price}</div>
-            <p className="text-xs text-muted-foreground">{sub}</p>
+            <h3 className="font-heading text-xl font-semibold tracking-wide text-foreground">{label}</h3>
+            <div className="my-4 font-heading text-5xl font-black text-foreground">{price}</div>
+            <p className="text-base text-muted-foreground">{sub}</p>
           </div>
         ))}
       </div>
 
       <div className="mt-10 flex flex-col items-center gap-4">
-        <div className="flex items-center gap-2 text-sm text-primary">
+        <div className="flex items-center gap-2 text-base text-primary">
           <AlertTriangle size={16} />
           <span className="font-semibold">Limited Seats Available</span>
         </div>
@@ -44,7 +44,7 @@ const Registration = () => (
           href="https://forms.google.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-primary px-10 py-3.5 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
+          className="rounded-lg bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
         >
           Register Now
         </a>

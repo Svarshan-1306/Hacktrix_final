@@ -8,22 +8,22 @@ const contacts = [
 const Contact = () => (
   <section id="contact" className="py-24 gradient-bg">
     <div className="container mx-auto px-4 lg:px-8">
-      <h2 className="mb-4 text-center font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="mb-4 text-center font-heading text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
         Contact <span className="text-secondary glow-text-blue">Us</span>
       </h2>
-      <p className="mx-auto mb-12 max-w-lg text-center text-muted-foreground">
+      <p className="mx-auto mb-12 max-w-lg text-center text-lg text-muted-foreground">
         Have questions? Reach out to our coordinators.
       </p>
 
       <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
         {contacts.map((c) => (
           <div key={c.name} className="glass rounded-2xl p-6 transition-all hover:-translate-y-1 hover:border-secondary/40">
-            <h3 className="mb-3 font-heading text-sm font-semibold tracking-wide text-foreground">{c.name}</h3>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Phone size={14} className="text-primary" /> {c.phone}
+            <h3 className="mb-3 font-heading text-xl font-semibold tracking-wide text-foreground">{c.name}</h3>
+            <div className="flex items-center gap-2 text-base text-muted-foreground">
+              <Phone size={16} className="text-primary" /> {c.phone}
             </div>
-            <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
-              <Mail size={14} className="text-secondary" /> {c.email}
+            <div className="mt-2 flex items-center gap-2 text-base text-muted-foreground">
+              <Mail size={16} className="text-secondary" /> {c.email}
             </div>
           </div>
         ))}

@@ -145,7 +145,7 @@ const Agenda = () => {
                   : "glass text-muted-foreground hover:text-foreground"
               }`}
             >
-              Day {d}
+              {d === 1 ? "April 16th" : "April 17th"}
             </button>
           ))}
         </div>

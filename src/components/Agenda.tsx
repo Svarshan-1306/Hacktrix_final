@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const day1 = [
+const April_16th = [
   { time: "09:00 AM", title: "Inauguration & Briefing" },
   { time: "10:00 AM", title: "Hackathon Kickoff" },
   { time: "12:00 PM", title: "Idea Validation Round" },
@@ -8,7 +8,7 @@ const day1 = [
   { time: "06:00 PM", title: "Progress Evaluation" },
 ];
 
-const day2 = [
+const April_17th = [
   { time: "08:00 AM", title: "Final Development Phase" },
   { time: "12:00 PM", title: "Submission Deadline" },
   { time: "01:00 PM", title: "Final Judging" },
@@ -119,7 +119,7 @@ const NeonDecorations = () => (
 
 const Agenda = () => {
   const [activeDay, setActiveDay] = useState<1 | 2>(1);
-  const events = activeDay === 1 ? day1 : day2;
+  const events = activeDay === 1 ? April_16th : April_17th;
 
 
   return (

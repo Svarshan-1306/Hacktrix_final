@@ -1,7 +1,8 @@
 const logos = [
   { name: "Sri Sai Ram Institute of Technology", src: "/ssit-logo.png" },
   { name: "Computer Society of India", src: "/csi-logo.png" },
-  { name: "IEEE Computer Society", src: "/ieee-logo.png" },
+  { name: "CSE Association", src: "/cse-association.png" },
+  { name: "Section 7", src: "/section-7.png" },
 ];
 
 const LogoBanner = () => {

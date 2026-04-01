@@ -63,15 +63,6 @@ const NeonDecorations = () => (
       style={{ boxShadow: "0 0 0 4px rgba(255,90,0,0.3), 0 0 30px 12px rgba(255,90,0,0.7), 0 0 60px 20px rgba(255,90,0,0.3)" }}
     />
 
-    {/* floating diamond */}
-    <svg
-      className="absolute right-16 bottom-44 animate-[float_8s_ease-in-out_infinite]"
-      width="90" height="90" viewBox="0 0 90 90"
-      style={{ filter: ORANGE_GLOW }}
-    >
-      <polygon points="45,3 87,45 45,87 3,45" fill="none" stroke="hsl(24,100%,60%)" strokeWidth="2.5" />
-    </svg>
-
     {/* neon horizontal scan line burst */}
     <svg
       className="absolute right-0 top-1/2 -translate-y-1/2"
@@ -83,25 +74,6 @@ const NeonDecorations = () => (
       <line x1="220" y1="33" x2="100" y2="33" stroke="hsl(200,100%,65%)" strokeWidth="1" />
       <circle cx="50" cy="25" r="5" fill="hsl(200,100%,65%)" />
     </svg>
-
-    {/* spinning tech crosshair */}
-    <svg
-      className="absolute right-52 bottom-28 animate-[spin_20s_linear_infinite]"
-      width="110" height="110" viewBox="0 0 110 110"
-      style={{ filter: ORANGE_GLOW }}
-    >
-      <circle cx="55" cy="55" r="42" fill="none" stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="55" y1="0"  x2="55" y2="30"  stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="55" y1="80" x2="55" y2="110" stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="0"  y1="55" x2="30" y2="55"  stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="80" y1="55" x2="110" y2="55" stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <circle cx="55" cy="55" r="6" fill="hsl(24,100%,60%)" />
-    </svg>
-
-    {/* blue glow dot bottom-right */}
-    <div className="absolute right-20 bottom-36 h-5 w-5 rounded-full bg-secondary animate-pulse"
-      style={{ animationDelay: "1.2s", boxShadow: "0 0 0 4px rgba(0,200,255,0.3), 0 0 30px 12px rgba(0,200,255,0.7), 0 0 60px 20px rgba(0,200,255,0.3)" }}
-    />
 
     {/* ── LEFT SIDE ─────────────────────────────────── */}
 
@@ -140,19 +112,7 @@ const NeonDecorations = () => (
       <circle cx="150" cy="25" r="5" fill="hsl(24,100%,60%)" />
     </svg>
 
-    {/* small spinning left crosshair */}
-    <svg
-      className="absolute left-40 bottom-40 animate-[spin_22s_linear_infinite_reverse]"
-      width="70" height="70" viewBox="0 0 70 70"
-      style={{ filter: ORANGE_GLOW }}
-    >
-      <circle cx="35" cy="35" r="26" fill="none" stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="35" y1="0"  x2="35" y2="18"  stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="35" y1="52" x2="35" y2="70"  stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="0"  y1="35" x2="18" y2="35"  stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <line x1="52" y1="35" x2="70" y2="35"  stroke="hsl(24,100%,60%)" strokeWidth="2" />
-      <circle cx="35" cy="35" r="4" fill="hsl(24,100%,60%)" />
-    </svg>
+
 
   </div>
 );

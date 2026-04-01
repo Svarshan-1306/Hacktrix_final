@@ -82,7 +82,7 @@ const HeroSection = () => {
 
         <div className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-6 font-cyber uppercase tracking-wider">
           <span className="flex items-center gap-2 rounded-xl border-2 border-secondary/50 bg-secondary/10 px-6 py-3 text-lg font-bold text-secondary shadow-[0_0_15px_rgba(0,255,255,0.2)] backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(0,255,255,0.4)]">
-            <span className="text-primary glow-text-orange">&gt;</span> PRIZE POOL: ₹50,000
+            <span className="text-primary glow-text-orange">&gt;</span> PRIZE POOL: ₹25,000
           </span>
           <span className="flex items-center gap-2 rounded-xl border-2 border-muted-foreground/30 bg-muted/10 px-6 py-3 text-lg font-bold text-foreground shadow-[0_0_15px_rgba(255,255,255,0.05)] backdrop-blur-sm transition-all hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]">
             <span className="text-primary glow-text-orange">&gt;</span> DATE: APRIL 16 &amp; 17, 2026

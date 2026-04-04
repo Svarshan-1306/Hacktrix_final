@@ -7,7 +7,7 @@ const plans = [
   {
     label: "CSI Members",
     price: "₹499",
-    sub: "per student",
+    sub: "per team (up to 3 students)",
     gradient: "from-primary/20 via-primary/5 to-transparent",
     border: "border-primary/50",
     glow: "hover:shadow-[0_0_30px_rgba(255,90,0,0.3)] border-primary/20 hover:border-primary/60",
@@ -16,7 +16,7 @@ const plans = [
   {
     label: "Non-CSI Members",
     price: "₹599",
-    sub: "per student",
+    sub: "per team (up to 3 students)",
     gradient: "from-secondary/20 via-secondary/5 to-transparent",
     border: "border-secondary/50",
     glow: "hover:shadow-[0_0_30px_rgba(0,255,255,0.3)] border-secondary/20 hover:border-secondary/60",

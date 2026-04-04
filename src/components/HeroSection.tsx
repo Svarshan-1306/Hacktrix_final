@@ -60,13 +60,10 @@ const HeroSection = () => {
     <section id="home" className="relative flex min-h-screen items-center gradient-hero overflow-hidden">
       <Particles />
       <div className="container relative z-10 mx-auto flex flex-col items-center text-center px-4 py-32 lg:px-8">
-        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 font-cyber text-xs font-semibold tracking-widest text-primary uppercase">
-          <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
-          system.init()
-        </div>
+        
         <h1 className="relative font-cyber text-7xl font-bold leading-none tracking-wider text-foreground sm:text-8xl lg:text-9xl">
           <span className="absolute -left-8 top-4 hidden -rotate-90 text-sm font-light tracking-widest text-muted-foreground/40 md:block">
-            v2.0.26
+            
           </span>
           [HACK<span className="text-primary glow-text-orange">TRIX</span>]
         </h1>

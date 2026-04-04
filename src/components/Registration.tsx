@@ -113,7 +113,7 @@ const Registration = () => (
       <div className="mt-10 flex flex-col items-center gap-4">
         <div className="flex items-center gap-2 text-base text-primary">
           <AlertTriangle size={16} />
-          <span className="font-semibold">Limited Seats Available</span>
+          <span className="font-semibold">CSI Member offer is applicable even if one member per team is a CSI member.</span>
         </div>
         <a
           href="https://forms.google.com"

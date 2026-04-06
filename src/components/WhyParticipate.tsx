@@ -24,7 +24,7 @@ const WhyParticipate = () => (
           These are the problem statements, take a look at it!
         </p>
         <a
-          href="/problem-statements.pdf"
+          href="/hacktrix-problem-statements.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-xl border border-primary/50 bg-primary/10 px-6 py-3 font-semibold text-primary transition-all hover:-translate-y-1 hover:bg-primary/20 hover:shadow-[0_0_20px_rgba(255,90,0,0.3)]"

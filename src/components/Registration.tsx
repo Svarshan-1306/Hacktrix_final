@@ -116,7 +116,7 @@ const Registration = () => (
           <span className="font-semibold">CSI Member offer is applicable even if one member per team is a CSI member.</span>
         </div>
         <a
-          href="https://forms.google.com"
+          href="https://konfhub.com/hacktrix"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-lg bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"

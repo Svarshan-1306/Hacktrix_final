@@ -74,7 +74,7 @@ const HeroSection = () => {
           Organized by{" "}
           <span className="text-foreground font-medium">Department of Computer Science and Engineering, Sri Sai Ram Institute of Technology</span>{" "}
           in association with{" "}
-          <span className="text-foreground font-medium">Computer Society of India – Region 7</span>
+          <span className="text-foreground font-medium whitespace-nowrap">Computer Society of India – Region 7</span>
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-4 font-cyber uppercase tracking-wider">

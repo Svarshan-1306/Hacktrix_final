@@ -72,7 +72,7 @@ const HeroSection = () => {
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
           Organized by{" "}
-          <span className="text-foreground font-medium">Sri Sai Ram Institute of Technology</span>{" "}
+          <span className="text-foreground font-medium">Department of Computer Science and Engineering, Sri Sai Ram Institute of Technology</span>{" "}
           in association with{" "}
           <span className="text-foreground font-medium">Computer Society of India – Region 7</span>
         </p>

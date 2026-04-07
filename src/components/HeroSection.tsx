@@ -110,7 +110,7 @@ const HeroSection = () => {
         {/* CTAs */}
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            href="#registration"
+            href="https://konfhub.com/hacktrix"
             className="rounded-lg bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
           >
             Register Now

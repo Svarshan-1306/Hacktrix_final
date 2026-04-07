@@ -42,7 +42,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#registration"
+            href="https://konfhub.com/hacktrix"
             className="rounded-lg bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground transition-all hover:brightness-110 glow-orange"
           >
             Register Now

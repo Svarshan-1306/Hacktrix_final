@@ -2,7 +2,7 @@ import { Code, Trophy, Users, Wrench, FolderOpen, Handshake, FileText } from "lu
 
 const reasons = [
   { icon: Code, title: "Build Real-World Solutions", desc: "Solve real problems in just 24 hours with cutting-edge tech." },
-  { icon: Trophy, title: "Win ₹25,000 in Prizes", desc: "Compete for exciting cash prizes and recognition." },
+  { icon: Trophy, title: "Win ₹50,000 in Prizes", desc: "Compete for exciting cash prizes and recognition." },
   { icon: Users, title: "Network with Mentors", desc: "Get guidance from industry experts and seasoned developers." },
   { icon: Wrench, title: "Hands-On Experience", desc: "Learn by building – the best way to sharpen your skills." },
   { icon: FolderOpen, title: "Enhance Your Portfolio", desc: "Ship a project in a weekend and stand out to recruiters." },

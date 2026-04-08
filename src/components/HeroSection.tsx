@@ -71,11 +71,23 @@ const HeroSection = () => {
           // A 24-Hour Hackathon
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-          Organized by{" "}
-          <span className="text-foreground font-medium">Department of Computer Science and Engineering, Sri Sai Ram Institute of Technology</span>{" "}
-          in association with{" "}
-          <span className="text-foreground font-medium whitespace-nowrap">Computer Society of India – Region 7</span>
-        </p>
+  <span className="block">
+    Organized by{" "}
+    <span className="text-foreground font-medium">
+      Department of Computer Science and Engineering,
+    </span>
+  </span>
+
+  <span className="block mt-1">
+    <span className="text-foreground font-medium">
+      Sri Sai Ram Institute of Technology
+    </span>{" "}
+    in association with{" "}
+    <span className="text-foreground font-medium whitespace-nowrap">
+      Computer Society of India – Region 7
+    </span>
+  </span>
+</p>
 
         <div className="mt-8 flex flex-col items-center gap-4 font-cyber uppercase tracking-wider">
 
